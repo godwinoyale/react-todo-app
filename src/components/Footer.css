@@ -14,7 +14,7 @@
 }
 @media (max-width: 768px){
     .item{
-        margin: 0x;
+        margin: 0px;
         display: block;
     }
 }
