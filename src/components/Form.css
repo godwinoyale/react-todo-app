@@ -75,3 +75,15 @@
 .completed{
     text-decoration: line-through;
 }
+@media (max-width: 768px){
+    .delete-btn{
+        margin: 0px 2px;
+        margin-top: -7px;
+        border-radius: 4px;
+        padding: 6px 10px;
+        border: none;
+        background-color: #70660e;
+        color: #fff;
+    }
+}
+    

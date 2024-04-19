@@ -12,3 +12,8 @@
 .item{
     margin: 50px;
 }
+@media (max-width: 768px){
+    .item{
+        margin: 5px;
+    }
+}
