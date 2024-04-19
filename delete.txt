@@ -1,0 +1,26 @@
+import React, { useState } from 'react';
+
+const DeleteConfirmationButton = ({ onDelete }) => {
+  const [confirming, setConfirming] = useState(false);
+
+  const handleConfirm = () => {
+    onDelete();
+    setConfirming(false);
+  };
+
+  return (
+    <div>
+      {confirming ? (
+        <div>
+          <p>Are you sure you want to delete?</p>
+          <button onClick={handleConfirm}>Yes</button>
+          <button onClick={() => setConfirming(false)}>No</button>
+        </div>
+      ) : (
+        <button onClick={() => setConfirming(true)}>Delete</button>
+      )}
+    </div>
+  );
+};
+
+export default DeleteConfirmationButton;
